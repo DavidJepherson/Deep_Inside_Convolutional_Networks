@@ -55,7 +55,7 @@ def visSquare(data1, padsize=1, padval=0):
 pred = net.predict([input_image])
 
 #Perform a backward pass for the cat class (281)
-bw = net.backward(**{net.outputs[0]: caffeLabel})
+bw = net.backward(**{net.outputs[0]: caffeLabel})#
 diff = bw['data']
 
 
